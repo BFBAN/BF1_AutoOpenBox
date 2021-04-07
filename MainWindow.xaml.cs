@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Security.Permissions;
 using System.Windows;
+using System.Windows.Navigation;
 using System.Windows.Threading;
 
 using Forms = System.Windows.Forms;
@@ -85,6 +87,12 @@ namespace BF1_AutoOpenBox
                 Delay(Convert.ToInt32(SliderSleep.Value));
                 ClassManaged.Keybd_event(Forms.Keys.Enter, ClassManaged.MapVirtualKey(Forms.Keys.Enter, 0), 2, 0);
             }
+        }
+
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            Process.Start(e.Uri.OriginalString);
+            e.Handled = true;
         }
 
         public static class DispatcherHelper
