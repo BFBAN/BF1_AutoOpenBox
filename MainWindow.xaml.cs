@@ -27,7 +27,7 @@ namespace BF1_AutoOpenBox
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Title = "[BFBAN] 战地1自动开战斗包 v" + Application.ResourceAssembly.GetName().Version.ToString();
+            Title = "[BFBAN] 战地1自动开战斗包小工具 v" + Application.ResourceAssembly.GetName().Version.ToString();
 
             main_ClassKeysManager = new ClassKeysManager();
             main_ClassKeysManager.AddKey(Forms.Keys.F9);

@@ -5,19 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BF1_AutoOpenBox"
         mc:Ignorable="d" Name="Name_MainWindow"
-        Title="[BFBAN] 战地1自动开战斗包" Height="250" Width="600" FontFamily="等线"
+        Title="[BFBAN] 战地1自动开战斗包小工具" Height="280" Width="600" FontFamily="等线"
         Closing="Window_Closing" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
 
     <Grid>
         <StackPanel Margin="5" Orientation="Vertical">
-            <TextBlock Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Column="0" Source="image_01.png" Stretch="Uniform" Margin="30,0,30,0"/>
+
+                <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"
                        Text="战地1自动开战斗包"/>
-            <TextBlock Margin="10,5,10,5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"
+                    <TextBlock Margin="10,5,10,5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"
                        Text="DS By CrazyZhang" />
-            <Slider x:Name="SliderSleep" Margin="10,5,10,5" VerticalAlignment="Center" IsSnapToTickEnabled="True"
+                </StackPanel>
+            </Grid>
+            <Slider x:Name="SliderSleep" Margin="10" VerticalAlignment="Center" IsSnapToTickEnabled="True"
                     Maximum="300" Minimum="10" TickFrequency="5" TickPlacement="TopLeft" Value="100" />
             <TextBlock Margin="10,5,10,5" VerticalAlignment="Center" FontSize="14" Foreground="Green" TextWrapping="WrapWithOverflow"
-                       Text="提示 : 请将鼠标移动到战斗包《开启》按钮上，然后勾选启动，按快捷键F9开启/关闭自动按键（如果按键无效，请尝试调整延时）"/>
+                       Text="提示 : 请将鼠标移动到战斗包《开启》按钮上，然后勾选启动，按快捷键F9开启/关闭自动开战斗包功能（如果功能无效，请尝试调整延时）"/>
             <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" Margin="0,10,0,10">
                 <TextBlock Margin="10,5,10,5" VerticalAlignment="Center" FontSize="14" 
                            Text="{Binding Path=Value, ElementName=SliderSleep, StringFormat=延迟 : \{0\}ms}" />
