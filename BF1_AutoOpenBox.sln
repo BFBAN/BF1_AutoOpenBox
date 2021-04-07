@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BF1_AutoOpenBox", "BF1_AutoOpenBox.csproj", "{90753C50-8026-497B-9A06-A69F9F9B96D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90753C50-8026-497B-9A06-A69F9F9B96D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90753C50-8026-497B-9A06-A69F9F9B96D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90753C50-8026-497B-9A06-A69F9F9B96D9}.Debug|x64.ActiveCfg = Debug|x64
+		{90753C50-8026-497B-9A06-A69F9F9B96D9}.Debug|x64.Build.0 = Debug|x64
+		{90753C50-8026-497B-9A06-A69F9F9B96D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90753C50-8026-497B-9A06-A69F9F9B96D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90753C50-8026-497B-9A06-A69F9F9B96D9}.Release|x64.ActiveCfg = Release|x64
+		{90753C50-8026-497B-9A06-A69F9F9B96D9}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEACAB75-6354-488B-843B-A908E5E01E86}
+	EndGlobalSection
+EndGlobal
