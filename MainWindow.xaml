@@ -20,7 +20,7 @@
                 </TextBlock>
                 <TextBlock Margin="10,5,10,5" VerticalAlignment="Center" FontSize="14" 
                            Text="{Binding Path=Value, ElementName=SliderSleep, StringFormat=延迟 : \{0\}ms}" />
-                <CheckBox x:Name="CheckBoxIsRun" Margin="10,5,15,5" Content="启动（快捷键F9）" FontSize="14" IsChecked="False" 
+                <CheckBox x:Name="CheckBoxIsRun" Margin="10,5,10,5" Content="启动（快捷键F9）" FontSize="14" IsChecked="False" 
                           VerticalAlignment="Center"/>
             </StackPanel>
 
